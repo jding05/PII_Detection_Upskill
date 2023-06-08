@@ -1,0 +1,26 @@
+OutPut from the text analytics api result:
+[RecognizePiiEntitiesResult(id=0, entities=[PiiEntity(text=employee, category=PersonType, subcategory=None, length=8, offset=4, confidence_score=0.97), PiiEntity(text=859-98-0987, category=USSocialSecurityNumber, subcategory=None, length=11, offset=22, confidence_score=0.65)], redacted_text=The ********'s SSN is ***********., warnings=[], statistics=None, is_error=False), RecognizePiiEntitiesResult(id=1, entities=[PiiEntity(text=employee, category=PersonType, subcategory=None, length=8, offset=4, confidence_score=0.96), PiiEntity(text=555-555-5555, category=PhoneNumber, subcategory=None, length=12, offset=31, confidence_score=0.8)], redacted_text=The ********'s phone number is ************., warnings=[], statistics=None, is_error=False)]
+--------
+Clear Print out for each pii redacted entity from the api result:
+Redacted Text: The ********'s SSN is ***********.
+Entity: employee
+	Category: PersonType
+	Confidence Score: 0.97
+	Offset: 4
+	Length: 8
+Entity: 859-98-0987
+	Category: USSocialSecurityNumber
+	Confidence Score: 0.65
+	Offset: 22
+	Length: 11
+Redacted Text: The ********'s phone number is ************.
+Entity: employee
+	Category: PersonType
+	Confidence Score: 0.96
+	Offset: 4
+	Length: 8
+Entity: 555-555-5555
+	Category: PhoneNumber
+	Confidence Score: 0.8
+	Offset: 31
+	Length: 12

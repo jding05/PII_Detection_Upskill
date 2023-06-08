@@ -1,0 +1,27 @@
+Modified Text: <PII> lives at <PII> Main Street, <PII>. His phone number is (<PII>) <PII>.
+Extracted PII Entities:
+Type: PERSON
+Value: John Doe
+Start Index: 0
+End Index: 7
+---
+Type: CARDINAL
+Value: 123
+Start Index: 18
+End Index: 20
+---
+Type: GPE
+Value: New York
+Start Index: 35
+End Index: 42
+---
+Type: CARDINAL
+Value: 555
+Start Index: 66
+End Index: 68
+---
+Type: CARDINAL
+Value: 123-4567
+Start Index: 71
+End Index: 78
+---

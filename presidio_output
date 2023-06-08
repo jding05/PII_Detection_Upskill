@@ -1,0 +1,34 @@
+original text:John Doe lives in New York. His email is johndoe@example.com.
+--------
+Type: EMAIL_ADDRESS
+Value: johndoe@example.com
+Start Index: 41
+End Index: 60
+-----------------
+Type: PERSON
+Value: John Doe
+Start Index: 0
+End Index: 8
+-----------------
+Type: LOCATION
+Value: New York
+Start Index: 18
+End Index: 26
+-----------------
+Type: URL
+Value: example.com
+Start Index: 49
+End Index: 60
+-----------------
+Redacted_text from Presidio Anonymize
+text: <PERSON> lives in <LOCATION>. His email is <EMAIL_ADDRESS>.
+items:
+[
+    {'start': 43, 'end': 58, 'entity_type': 'EMAIL_ADDRESS', 'text': '<EMAIL_ADDRESS>', 'operator': 'replace'},
+    {'start': 18, 'end': 28, 'entity_type': 'LOCATION', 'text': '<LOCATION>', 'operator': 'replace'},
+    {'start': 0, 'end': 8, 'entity_type': 'PERSON', 'text': '<PERSON>', 'operator': 'replace'}
+]
+
+-------------
+Final Answer:
+<PERSON> lives in <LOCATION>. His email is <EMAIL_ADDRESS>.
